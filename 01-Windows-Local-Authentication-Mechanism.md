@@ -51,7 +51,7 @@ Aşağıdakı skrinşotda Mimikatz vasitəsilə `SeDebugPrivilege` yetkisinin ve
 `lsass.exe` içərisində `dwm-1`, `dwm-2` kimi system manager user-ləri görə bilərik, bunlara fiziki olaraq giriş mümkün deyil, amma yetkilərindən istifadə edə bilərik. Bu user-lər bizim interface-i yaxşı görünməsini təmin edir, sistem işlərini görür.
 
 NTLMv1 --> DES
-NTLMv2 --> HMAC
+NTLMv2 --> HMAC-MD5
 
 Bu protokol challenge-response prinsipinə əsasən işləyir:
 1. Sorğu göndərir, NTLM negotiate
