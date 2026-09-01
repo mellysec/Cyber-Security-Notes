@@ -63,7 +63,7 @@ Bu protokol parolun hash-inin şəbəkə üzərindən açıq-aşkar göndərilm�
 
 Qarşı tərəf bizə challenge göndərir. Bu challenge-də nələr qeyd olunur? Challenge qarşı tərəf bizə random həcmdə data göndərir və bu datanı biz alırıq, məqsədi odur ki, random olan datanı öz parolumuzun hashi ilə encryption edək. Yeni parolumuzun hashini açar kimi istifadə edirik.
 
-Negotiate sorğusunda nələr qeyd olunur? Mən sənlə əlaqə qurmaq istəyirəm, dəstəklədiyim şeylər bunlardır və s. Daha detallı yazarsan.
+Negotiate sorğusunda nələr qeyd olunur? Mən sənlə əlaqə qurmaq istəyirəm, dəstəklədiyim şeylər bunlardır və s.
 
 Client cavab verəndə cavabın tərkibinə özünün Challenge məlumatlarını və Timestamp-ini əlavə edərək göndərir. Bunu etməsinin səbəbi, eyni anda iki cihaz eyni parolu daxil edərək öz kimliyini təsdiq etdikdə yaranacaq eyniliyin və bundan qaynaqlanan NTLM Relay hücumunun qarşısını almaqdır.
 
