@@ -24,7 +24,7 @@ Burada diqqət etməli olduğumuz hissə parolların SAM-a göndərilib yoxlanı
 
 Digər bir mövzumuz NTLM protokoludur. Bu, hash-ləmədən tamamilə ayrı bir qavramdır. NTLM protokolu şəkildə kimlik doğrulama protokoludur. ŞƏBƏKƏDƏ! Yeni mütləq iki cihaz olmalıdır. Məsələn, Vəli öz komputerində SMB ilə bir fayl paylaşıb, mən öz kompüterim bu faylı görmək üçün kimliyimi doğrulamalıyam, bunu təmin edən də NTLM protokoludur. Bu protokol kompüterin özündə istifadə olunmur! Sırf şəbəkədə. İleridə bundan daha detallı danışacağıq və Wireshark üzərindən praktiki göstərəcəyəm. 
 
-Təkrardan qayıdaq SAM-a. Okey, əgər bizim parolumuz düzgündürsə və SAM-dakı hash dəyəri ilə uyğunlaşırsa, `lsass.exe` bizə bir access token verir. Əgər bu token olmasaydı, bizim hər hərəkətimizdə, məsələn brauzerə girmək üçün sistem bizdən doğrulama istəyərdi. Əslində bunu yuxarıda qeyd etmişəm, sadəcə kurs materialı da bir az qarışıq olduğu üçün belə not almışam, düzəldərik. 
+Təkrardan qayıdaq SAM-a. Okey, əgər bizim parolumuz düzgündürsə və SAM-dakı hash dəyəri ilə uyğunlaşırsa, `lsass.exe` bizə bir access token verir. Əgər bu token olmasaydı, bizim hər hərəkətimizdə, məsələn brauzerə girmək üçün sistem bizdən doğrulama istəyərdi. 
 
 Mimikatz tool-u. Bu tool vasitəsi ilə biz `lsass.exe`-nin tərkibini oxuya bilərik. Təbii ki, bu illegal bir tool-dur, ona görə ən sadə antivirus tərəfindən belə aşkarlanır.
 
