@@ -13,7 +13,7 @@ Məsələn:
 
 `explorer.exe` prosesindən başqa digər bütün proseslər system32 qovluğunun altında yerləşir. `explorer.exe` ise `C:\Windows`-un altında yerləşir, bu prosesləri başqa bir qovluqda görürsənsə bilki fakedir. Məsələn `C:\Programs Files`, `C:\Users\Public` və s. və s. Eyni zamanda bu proseslərin adlarına da diqqət etmək lazımdır. Hackerlar adlarda cüzi bir şeyləri dəyişərək legitim prosesə özlərini oxşada bilərlər. Məsələn `lsass.exe`, `lsasss.exe` və s. 
 
-Windows-da kimlik doğrulama məlumatları SAM faylında saxlanılmır. Açılışı Security Account Manager, yerləşdiyi ünvan: `C:\Windows\System32\config\SAM`
+Windows-da kimlik doğrulama məlumatları SAM faylında saxlanılır. Açılışı Security Account Manager, yerləşdiyi ünvan: `C:\Windows\System32\config\SAM`
 
 Bu faylı açmaq, dəyişdirmək, silmək, kopyalamaq olmur. SAM-a sadece iki yolla access etmək olar: birincisi computer sönülü olmalıdır, onun SSD-si çıxarılıb başqa kompa taxılmalı və SAM elə oxunmalıdır. İkincisi ile illegal tool-lar vasitəsi ilə oxuna bilər. Məsələn, mimikatz toolu vasitəsi ilə. 
 
