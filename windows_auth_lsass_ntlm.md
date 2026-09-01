@@ -34,8 +34,7 @@ Event ID-də bunların hamısını görmək olur, bunu da praktiki olaraq göst�
 
 ### Event Viewer - Se- ilə Başlayan Yetkilər və 4672 Event ID
 Admin hüquqları ilə daxil olunduqda və xüsusi `Se` yetkiləri təyin edildikdə Event Viewer-də qeydə alınan `4672 (Special Logon)` hadisəsi:
-
-<img width="1280" height="412" alt="image" src="https://github.com/user-attachments/assets/147c8860-0586-425d-b20d-543fce0abef3" />
+<img width="775" height="593" alt="image" src="https://github.com/user-attachments/assets/6deaa82d-43c8-47c9-ba1e-0d804d9436b4" />
 
 
 Biz burada mimikatz-a `SeDebugPrivilege` yetkisi verməliyik. Bu yetki ilə bir proses RAM-da digər prosesin tərkibini açıb oxuya bilər. Bəs bu yetki niyə var? Bu yetki legal işlər üçün hazırlanıb və debug prosesi üçün hazırlanıb, yeni xətanı detallı araşdırmaq, test etmək üçün. İndi mimikatz-a bu yetkini verək:
