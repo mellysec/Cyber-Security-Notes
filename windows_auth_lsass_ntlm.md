@@ -35,7 +35,8 @@ Event ID-də bunların hamısını görmək olur, bunu da praktiki olaraq göst�
 ### Event Viewer - Se- ilə Başlayan Yetkilər və 4672 Event ID
 Admin hüquqları ilə daxil olunduqda və xüsusi `Se` yetkiləri təyin edildikdə Event Viewer-də qeydə alınan `4672 (Special Logon)` hadisəsi:
 
-![Event Viewer 4672 Special Logon](placeholder_eventviewer_4672.png)
+<img width="1280" height="412" alt="image" src="https://github.com/user-attachments/assets/147c8860-0586-425d-b20d-543fce0abef3" />
+
 
 Biz burada mimikatz-a `SeDebugPrivilege` yetkisi verməliyik. Bu yetki ilə bir proses RAM-da digər prosesin tərkibini açıb oxuya bilər. Bəs bu yetki niyə var? Bu yetki legal işlər üçün hazırlanıb və debug prosesi üçün hazırlanıb, yeni xətanı detallı araşdırmaq, test etmək üçün. İndi mimikatz-a bu yetkini verək:
 1. Admin kimi açırıq.
@@ -45,7 +46,8 @@ Biz burada mimikatz-a `SeDebugPrivilege` yetkisi verməliyik. Bu yetki ilə bir 
 ### Mimikatz İstifadəsi və Lsass Oxunması
 Aşağıdakı skrinşotda Mimikatz vasitəsilə `SeDebugPrivilege` yetkisinin verilməsi və `lsass.exe` yaddaşından NTLM hash-lərin oxunması prosesi əks olunmuşdur:
 
-![Mimikatz SeDebugPrivilege və LogonPasswords](placeholder_mimikatz.png)
+<img width="1318" height="1039" alt="image" src="https://github.com/user-attachments/assets/2e46ab11-813c-4e5c-a3b7-db0866bd213f" />
+
 
 `lsass.exe` içərisində `dwm-1`, `dwm-2` kimi system manager user-ləri görə bilərik, bunlara fiziki olaraq giriş mümkün deyil, amma yetkilərindən istifadə edə bilərik. Bu user-lər bizim interface-i yaxşı görünməsini təmin edir, sistem işlərini görür.
 
@@ -71,4 +73,5 @@ Nəticənin tamamilə UNİKAL olmasını təmin etmək üçün Client serverin r
 ### NTLM Protokolu Trafiki (Wireshark)
 Wireshark üzərindən NTLM autentifikasiya prosesinin 4 mərhələsi (`Negotiate`, `Challenge`, `Response`, `Auth`) paket təhlili zamanı belə görünür:
 
-![NTLM Wireshark Traffic Analysis](placeholder_wireshark_ntlm.png)
+<img width="1280" height="430" alt="image" src="https://github.com/user-attachments/assets/767f03fb-da6c-4296-9159-f4bc2fbe1090" />
+
