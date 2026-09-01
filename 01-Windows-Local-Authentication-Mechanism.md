@@ -26,7 +26,7 @@ Digər bir mövzumuz NTLM protokoludur. Bu, hash-ləmədən tamamilə ayrı bir 
 
 Təkrardan qayıdaq SAM-a. Okey, əgər bizim parolumuz düzgündürsə və SAM-dakı hash dəyəri ilə uyğunlaşırsa, `lsass.exe` bizə bir access token verir. Əgər bu token olmasaydı, bizim hər hərəkətimizdə, məsələn brauzerə girmək üçün sistem bizdən doğrulama istəyərdi. Əslində bunu yuxarıda qeyd etmişəm, sadəcə kurs materialı da bir az qarışıq olduğu üçün belə not almışam, düzəldərik. 
 
-Mimikatz tool-u. Bu tool vasitəsi ilə biz `lsass.exe`-nin tərkibini oxuya bilərik. Təbii ki, bu illegal bir tool-dur, ona görə ən sadə antivirus tərəfindən belə aşkarlanır, kursda əlavə olaraq zone id-dən danışılıb, bunu araşdırmaq lazımdır detallı, çünki tam başa düşmədim. Cmd emrləri falan göstərildi dir /r sonra more filename.zip məsələn. 
+Mimikatz tool-u. Bu tool vasitəsi ilə biz `lsass.exe`-nin tərkibini oxuya bilərik. Təbii ki, bu illegal bir tool-dur, ona görə ən sadə antivirus tərəfindən belə aşkarlanır.
 
 Mimikatz-a geri dönək. Mimikatz cmd komandaları ilə işləmir. Onun xüsusi komandaları var, bu komandaları internetdən və ya AI-dan öyrənmək olar. Və onu da qeyd edim ki, Mimikatz mütləq admin yetkisində açılmalıdır. Biz bilirik ki, RAM-da hər bir proses ayrı olaraq saxlanılır və bir proses digər prosesin fəaliyyətinə qarışa bilməz. Mimikatz isə `lsass.exe`-nin tərkib hissəsini oxumaq üçün RAM-da `lsass`-ın beyninə girməlidir, `lsass.exe` access edilməlidir. Bunu necə edəcəyik? Maraqlı hissə burasıdır. Burada işin içinə Windows-da olan özəl yetkilər girir. Hansı ki, bu yetkilər `Se` ifadesi ilə başlayır. Məsələn: `SeDebugPrivilege`, `SeBackupPrivilege` və s. 
 
