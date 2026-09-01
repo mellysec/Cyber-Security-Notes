@@ -1,6 +1,6 @@
 # Windows Kimlik Doğrulama Mexanizmləri, LSASS və NTLM Protokolu
 
-Windows-da iki cür kimlik doğrulama mexanizmi var: **Lokal** və **Domain**. Lokal kimlik doğrulaması yalnız öz komputerimizdə olan bir doğrulama mexanizmidir. Domain-də ise domaine qoşulmuş bütün cihazları əhatə edir. Lolbas adlı bir site var bunu araşdıracam. Hakerlərin və ya apt qrupların ən çox üz tutduqları Windows legitim prosesləri var!
+Windows-da iki cür kimlik doğrulama mexanizmi var: **Lokal** və **Domain**. Lokal kimlik doğrulaması yalnız öz komputerimizdə olan bir doğrulama mexanizmidir. Domain-də ise domaine qoşulmuş bütün cihazları əhatə edir. Hakerlərin və ya apt qrupların ən çox üz tutduqları Windows legitim prosesləri var!
 Məsələn:
 - `explorer.exe`
 - `svchost.exe`
